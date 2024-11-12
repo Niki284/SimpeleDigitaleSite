@@ -1,0 +1,62 @@
+.about {
+    margin: 7rem 1rem;
+}
+/* Algemene styling voor de About-sectie */
+.about__info {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Lijn styling voor visuele scheiding */
+.about__line {
+    width: 100px;
+    height: 4px;
+    background-color: #bd1f9b;
+    margin: 1rem auto 2rem;
+    border-radius: 2px;
+}
+
+/* Tekst styling */
+.about__text {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+/* Afbeeldingen styling */
+.about__images {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about__images img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about__images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsiviteit voor kleinere schermen */
+@media (max-width: 768px) {
+    .about__text {
+        font-size: 1rem;
+    }
+
+    .about__images {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

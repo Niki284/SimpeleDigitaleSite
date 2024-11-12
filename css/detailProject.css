@@ -1,0 +1,53 @@
+/* Algemene styling voor beide secties */
+.detail {
+    display: flex;
+    gap: 5rem;
+    padding: 8rem 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.detail__image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.detail__info {
+    flex: 1;
+}
+
+.detail__category {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.detail__title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #640650;
+}
+
+
+
+/* Responsiviteit voor kleinere schermen */
+@media (max-width: 768px) {
+    .detail {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .detailother > div {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .detailother {
+        gap: 1rem;
+    }
+}
